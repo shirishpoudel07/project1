@@ -1277,7 +1277,7 @@ main {
     }
     
     .hero-section {
-        height: calc(55vh - 30px);
+        height: calc(65vh - 30px);
     }
     
     .hero-title {
