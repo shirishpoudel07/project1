@@ -1729,3 +1729,374 @@ main {
         background: rgba(0, 0, 0, 0.9);
     }
 }
+
+/* ======= Additional Responsive Enhancements ======= */
+
+/* Very Large Screens (1600px and up) */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1600px;
+    }
+    
+    .nav-info-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .ad-options-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Ultra Wide Screens (2000px and up) */
+@media (min-width: 2000px) {
+    .container {
+        max-width: 1800px;
+    }
+    
+    .nav-info-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Tablet Landscape Specific (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .hero-section {
+        height: 70vh;
+    }
+    
+    .entertainment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet Portrait Specific (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .nav-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .entertainment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Small Tablets and Large Phones (480px to 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .nav-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ad-options-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-buttons,
+    .qfx-buttons,
+    .ad-contact-buttons {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* iPhone 14 Pro Max and similar (430px) */
+@media (max-width: 430px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-container {
+        padding: 12px 15px;
+    }
+    
+    .hero-content {
+        padding: 20px 15px;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .large-btn {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+}
+
+/* iPhone SE and similar small devices (375px) */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-description {
+        font-size: 16px;
+    }
+    
+    .nav-info-card h3 {
+        font-size: 18px;
+    }
+    
+    .section-header h2 {
+        font-size: 24px;
+    }
+    
+    .store-name {
+        font-size: 18px;
+    }
+    
+    .qfx-title {
+        font-size: 32px;
+    }
+}
+
+/* Very Small Devices (320px) */
+@media (max-width: 320px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .nav-container {
+        padding: 10px;
+    }
+    
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .hero-description {
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 10px 15px;
+        font-size: 13px;
+        min-width: 100px;
+    }
+    
+    .large-btn {
+        padding: 12px 18px;
+        font-size: 14px;
+        min-width: 120px;
+    }
+    
+    .nav-info-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-info-icon i {
+        font-size: 18px;
+    }
+    
+    .company-name {
+        font-size: 14px;
+    }
+}
+
+/* Foldable Devices (Galaxy Fold, etc.) */
+@media (max-width: 280px) {
+    .company-name {
+        display: none;
+    }
+    
+    .hero-buttons,
+    .qfx-buttons,
+    .ad-contact-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn,
+    .large-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .filter-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .filter-select {
+        width: 100%;
+    }
+}
+
+/* Landscape Mobile Phones */
+@media (max-height: 500px) and (orientation: landscape) and (max-width: 900px) {
+    .hero-section {
+        height: 90vh;
+    }
+    
+    .page-header {
+        min-height: 150px;
+        padding: 40px 0;
+    }
+    
+    .nav-links {
+        height: calc(100vh - 60px);
+        padding-top: 20px;
+    }
+    
+    .nav-link {
+        padding: 8px 16px;
+        margin-bottom: 8px;
+    }
+}
+
+/* iPhone 12/13/14 Mini (375x812) */
+@media (max-width: 375px) and (min-height: 800px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .nav-info-card {
+        padding: 20px 15px;
+    }
+    
+    .entertainment-item {
+        min-height: 200px;
+    }
+}
+
+/* iPhone 12/13/14 Pro Max (428x926) */
+@media (min-width: 428px) and (max-width: 428px) {
+    .stores-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .nav-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* iPad Mini (768x1024) */
+@media (min-width: 768px) and (max-width: 768px) {
+    .entertainment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* iPad Air/Pro (820x1180, 1024x1366) */
+@media (min-width: 820px) and (max-width: 1024px) {
+    .nav-info-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .entertainment-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Surface Pro and similar (1368x912) */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .entertainment-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 4K and Ultra-wide displays */
+@media (min-width: 2560px) {
+    .container {
+        max-width: 2000px;
+    }
+    
+    .nav-info-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* Ensure text remains readable on all devices */
+@media (max-width: 480px) {
+    .store-info {
+        font-size: 13px;
+    }
+    
+    .feature-item span {
+        font-size: 14px;
+    }
+    
+    .ad-option p {
+        font-size: 14px;
+    }
+    
+    .info-item p {
+        font-size: 14px;
+    }
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+    .nav-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .social-icons a {
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
