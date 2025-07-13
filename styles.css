@@ -1182,6 +1182,295 @@ main {
 }
 
 
+/* ======= Responsive Design ======= */
+
+/* iPad Pro (12.9-inch) - Landscape */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    .container {
+        max-width: 1200px;
+        padding: 0 var(--spacing-xl);
+    }
+    
+    .nav-info-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .entertainment-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .stats-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hero-title {
+        font-size: 3.2rem;
+    }
+    
+    .qfx-title {
+        font-size: 2.8rem;
+    }
+}
+
+/* iPad Pro (12.9-inch) - Portrait */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    .container {
+        max-width: 900px;
+        padding: 0 var(--spacing-xl);
+    }
+    
+    .nav-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .entertainment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .qfx-title {
+        font-size: 2.4rem;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+}
+
+/* iPad Air and smaller tablets - Landscape */
+@media (min-width: 768px) and (max-width: 1180px) and (orientation: landscape) {
+    .container {
+        max-width: 1000px;
+        padding: 0 var(--spacing-lg);
+    }
+    
+    .nav-info-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .entertainment-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .stats-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hero-title {
+        font-size: 2.6rem;
+    }
+    
+    .qfx-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-section {
+        height: calc(85vh - 80px);
+    }
+    
+    .ad-options-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+}
+
+/* iPad Air and smaller tablets - Portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .container {
+        max-width: 700px;
+        padding: 0 var(--spacing-lg);
+    }
+    
+    .nav-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .entertainment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-title {
+        font-size: 2.4rem;
+    }
+    
+    .qfx-title {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        height: calc(70vh - 80px);
+    }
+    
+    .ad-options-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .filters-container {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-lg);
+    }
+}
+
+/* General tablet optimizations */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .navbar {
+        height: 80px;
+    }
+    
+    .nav-container {
+        padding: var(--spacing-lg) var(--spacing-xl);
+    }
+    
+    .company-name {
+        font-size: 1.3rem;
+    }
+    
+    .nav-link {
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto var(--spacing-xl);
+    }
+    
+    .hero-buttons {
+        gap: var(--spacing-lg);
+    }
+    
+    .btn {
+        padding: var(--spacing-lg) var(--spacing-xl);
+        font-size: 1rem;
+    }
+    
+    .large-btn {
+        padding: var(--spacing-xl) var(--spacing-xxl);
+        font-size: 1.1rem;
+    }
+    
+    .store-image-container {
+        height: 250px;
+    }
+    
+    .store-details {
+        padding: var(--spacing-lg);
+    }
+    
+    .store-name {
+        font-size: 1.1rem;
+    }
+    
+    .entertainment-item {
+        min-height: 300px;
+    }
+    
+    .content-box {
+        padding: var(--spacing-lg);
+    }
+    
+    .content-box h3 {
+        font-size: 1.2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .qfx-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .feature-item {
+        padding: var(--spacing-md);
+    }
+    
+    .nav-info-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .nav-info-icon {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .nav-info-icon i {
+        font-size: 1.6rem;
+    }
+    
+    .stat-box {
+        padding: var(--spacing-lg);
+    }
+    
+    .stat-number {
+        font-size: 2.2rem;
+    }
+    
+    .ad-option {
+        padding: var(--spacing-lg);
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+}
+
 
 /* ======= Responsive Design ======= */
 @media (max-width: 1024px) {
@@ -1190,8 +1479,9 @@ main {
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
+    
     
     .qfx-title {
         font-size: 2rem;
@@ -1203,6 +1493,7 @@ main {
     
     .company-name {
         font-size: 1.2rem;
+    
     }
     
     .features-grid {
@@ -1215,9 +1506,95 @@ main {
     
 }
 
+/* ======= Tablet Responsive Design (769px - 1070px) ======= */
+@media (min-width: 769px) and (max-width: 1070px) {
+    /* ======= Typography Adjustments ======= */
+    html {
+        font-size: 15px;
+    }
+    
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+    h4 { font-size: 1.1rem; }
+    
+    /* ======= Navigation Adjustments ======= */
+    .nav-container {
+        padding: var(--spacing-lg) var(--spacing-lg);
+    }
+    
+    .company-name {
+        font-size: 1rem;
+    }
+    
+    .nav-links {
+        gap: var(--spacing-lg);
+    }
+    
+    .nav-link {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.95rem;
+    }
+    
+    .logo-img {
+        height: 45px;
+    }
+    
+    /* ======= Hero Section ======= */
+    .hero-section {
+        height: calc(57vh - 80px);
+    }
+    
+    .hero-title {
+        font-size: 2.3rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .hero-description {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .hero-content {
+        max-width: 700px;
+
+        padding: var(--spacing-lg);
+    }
+    
+    .hero-buttons {
+        gap: var(--spacing-md);
+    }
+    
+    .btn {
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: 0.95rem;
+        min-width: 130px;
+    }
+    
+    .large-btn {
+        padding: var(--spacing-lg) var(--spacing-xl);
+        font-size: 1rem;
+        min-width: 160px;
+    }
+  
+
+    
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 15px;
+    }
+        
+    
+    .hero-title {
+        font-size: 2.3rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .hero-description {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-lg);
     }
     
     body {
