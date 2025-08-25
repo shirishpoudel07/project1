@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QFX Cinema - POKHARA TRADE MALL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   
+      <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.jpg" alt="Pokhara Trade Mall Logo" class="logo-img">
+                <span class="company-name"></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="stores.html" class="nav-link">Stores</a></li>
+                <li><a href="cinema.html" class="nav-link active">Cinema</a></li>
+                <li><a href="entertainment.html" class="nav-link ">Entertainment</a></li>
+                <li><a href="advertisement.html" class="nav-link">Advertisement</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links" id="navMinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="stores.html" class="nav-link">Stores</a></li>
+                <li><a href="cinema.html" class="nav-link active">Cinema</a></li>
+                <li><a href="entertainment.html" class="nav-link ">Entertainment</a></li>
+                <li><a href="advertisement.html" class="nav-link">Advertisement</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="cinema-loader" class="cinema-loader" role="status" aria-live="polite" aria-label="Loading cinema content">
+        <div class="cinema-loader-content">
+            <div class="cinema-loader-logo">
+                <span class="qfx-q">Q</span><span class="qfx-fx">FX</span>
+            </div>
+            <div class="cinema-loader-bar"></div>
+            <p class="cinema-loader-text">Loading amazing cinema experiences...</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Animated Background Container -->
+        <div class="cinema-bg-animation" id="cinemaBgAnimation">
+            <!-- Flying elements will be added by JavaScript -->
+        </div>
+
+        <section class="qfx-section">
+            <div class="container">
+                <div class="qfx-content">
+                    <!-- QFX Logo Design -->
+                    <div class="qfx-logo-container">
+                        <div class="qfx-logo">
+                            <div class="qfx-logo-circle">
+                                <span class="qfx-text">QFX</span>
+                                <span class="cinemas-text">cinemas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="qfx-compact-info">
+                        <div class="qfx-features">
+                            <h3>Premium Movie Experience</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <i class="fas fa-film"></i>
+                                    <span>Latest Movies</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-chair"></i>
+                                    <span>Comfortable Seating</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-volume-up"></i>
+                                    <span>Clear Sound & Picture</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-snowflake"></i>
+                                    <span>Air Conditioning</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-hotdog"></i>
+                                    <span>Snacks & Drinks</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <span>Easy Booking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enhanced Services Section -->
+                    <div class="cinema-services">
+                        <h3>Our Premium Services</h3>
+                        <div class="services-grid">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <h4>VIP Experience</h4>
+                                <p>Premium seating with extra comfort and exclusive amenities</p>
+                                <div class="service-badge">Premium</div>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h4>Couple Seats</h4>
+                                <p>Special seating arrangement for couples with privacy</p>
+                                <div class="service-badge">Popular</div>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-baby"></i>
+                                </div>
+                                <h4>Family Friendly</h4>
+                                <p>Special shows and seating for families with children</p>
+                                <div class="service-badge">Family</div>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-wheelchair"></i>
+                                </div>
+                                <h4>Accessible Seating</h4>
+                                <p>Wheelchair accessible seating with companion seats</p>
+                                <div class="service-badge">Accessible</div>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <h4>Private Shows</h4>
+                                <p>Book entire hall for private screenings and events</p>
+                                <div class="service-badge">Exclusive</div>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <h4>Gift Cards</h4>
+                                <p>Perfect gift for movie lovers with flexible denominations</p>
+                                <div class="service-badge">Gift</div>
+                            </div>
+                        </div>
+                    </div>
+
+                        
+                        <div class="booking-actions">
+                            <a href="https://www.qfxcinemas.com/" target="_blank" class="btn btn-primary large-btn">
+                                <i class="fas fa-ticket-alt"></i> Book Now
+                            </a>
+                            <a href="tel:+97761123456" class="btn btn-secondary large-btn">
+                                <i class="fas fa-phone"></i> Call: 061-123456
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h4>About POKHARA TRADE MALL</h4>
+                    <p>Nepal's premier shopping destination offering world-class retail, dining, and entertainment experiences in the heart of Pokhara.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Lakeside, Pokhara, Nepal</p>
+                        <p><i class="fas fa-phone"></i> +977 61 123456</p>
+                        <p><i class="fas fa-envelope"></i> info@pokharatrade.com</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                        <li><a href="cinema.html">Cinema</a></li>
+                        <li><a href="entertainment.html">Entertainment</a></li>
+                        <li><a href="advertisement.html">Advertisement</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section hours">
+                    <h4>Opening Hours</h4>
+                    <ul class="hours-list">
+                        <li><span>Monday - Friday:</span> 10:00 AM - 10:00 PM</li>
+                        <li><span>Saturday:</span> 10:00 AM - 11:00 PM</li>
+                        <li><span>Sunday:</span> 11:00 AM - 9:00 PM</li>
+                        <li><span>Food Court:</span> 10:00 AM - 11:00 PM</li>
+                        <li><span>QFX Cinema:</span> According to show timings</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 POKHARA TRADE MALL. All rights reserved. | Designed with <i class="fas fa-heart"></i> by Shirish</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
